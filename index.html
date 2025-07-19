@@ -4,7 +4,6 @@
   <title>Ron Twito - Portfilio</title>
   <link rel="icon" type="image/jpeg" href="favicon.jpg">
   <style>
-    /* רקע שחור, פונט מונוספייס ירוק */
     body {
       background-color: #000000;
       color: #00ff00;
@@ -19,7 +18,6 @@
       padding: 20px;
     }
 
-    /* כותרות בהיר יותר ועם אפקט קל */
     h1 {
   color: #00ff00;
   font-size: 3rem;
@@ -77,10 +75,32 @@
 .contact-section button:hover {
   background-color: #003300;
 }
+.background-split {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1;
+}
 
+.background-half {
+  width: 50%;
+  height: 100%;
+  background-image: url('numbers.png');
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
 
+.left-half {
+  background-position: left;
+}
 
-    /* קישורים ירוקים עם הדגשה ב-hover */
+.right-half {
+  background-position: right;
+}
+
     .links {
       display: flex;
       gap: 20px;
@@ -257,6 +277,11 @@
   </style>
 </head>
 <body>
+  <div class="background-split">
+  <div class="background-half left-half"></div>
+  <div class="background-half right-half"></div>
+</div>
+
   <h1>Ron Twito</h1>
   <h2>B.Sc. Computer Science & Cyber Security Student at The Open University of Israel</h2>
   <h2>Practical Software Engineer via Ort Rehovot College</h2>
