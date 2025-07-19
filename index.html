@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ron Twito</title>
+  <title>Ron Twito</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .links {
+      display: flex;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077b5; /* LinkedIn Blue */
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-<h1>Ron Twito</h1>
-<h2>B.Sc. Computer Science & Cyber Security Student at The Open University of Israel</h2>
-<h2>Practical Software Engineer via Ort Rehovot College</h2>
+  <h1>Ron Twito</h1>
+  <h2>B.Sc. Computer Science & Cyber Security Student at The Open University of Israel</h2>
+  <h2>Practical Software Engineer via Ort Rehovot College</h2>
 
-<div style="display: flex; gap: 16px;">
-  <a href="https://www.linkedin.com/in/ron-twito-722990257/">Linkedin</a>
-  <a href="https://github.com/RonTwito">Github</a>
-</div>
-
-
+  <div class="links">
+    <a href="https://www.linkedin.com/in/ron-twito-722990257/">LinkedIn</a>
+    <a href="https://github.com/RonTwito">GitHub</a>
+  </div>
 </body>
 </html>
