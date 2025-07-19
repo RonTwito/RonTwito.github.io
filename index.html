@@ -287,6 +287,31 @@
   box-shadow: 0 0 10px #00ff00;
 }
 
+.project {
+      background-color: #001100;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #00ff00;
+      transition: box-shadow 0.3s ease;
+    }
+    .project:hover {
+      box-shadow: 0 0 20px #33ff33;
+    }
+    .project a {
+      color: #00ff00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-bottom: 1px dotted #00ff00;
+      padding-bottom: 2px;
+      transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    }
+    .project a:hover {
+      color: #33ff33;
+      border-bottom-color: #33ff33;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -336,6 +361,26 @@ $ Languages --list
 > English  -Fluent
 </pre>
 </div>
+
+<h2>Some Projects</h2>
+<div class="project">
+    <a href="https://github.com/RonTwito/SpyMe" target="_blank" rel="noopener noreferrer">SpyMe</a>
+    <p>Trojan weather app which listens to the user and collects specific info about him</p>
+    <p>Technologies: Flask, Google Maps API, JSON, Java, Python, Android Studio</p>
+  </div>
+  
+  <div class="project">
+    <a href="https://github.com/RonTwito/QA_AI_AGENT" target="_blank" rel="noopener noreferrer">QA_AI_AGENT</a>
+    <p>AI Agent for QA purposes of an existing code. Fixing the code directly</p>
+    <p>Technologies: Python, OpenRouter API Key, DeepSeek, Tkinter</p>
+  </div>
+  
+  <div class="project">
+    <a href="https://github.com/RonTwito/Encryption_On_Bytes_Project" target="_blank" rel="noopener noreferrer">Encryption_On_Bytes</a>
+    <p>A project which implements an key based Encryption which works on the bytes of a certain file given by a file explorer</p>
+    <p>Technologies: Java, Java Frames, ActionListener, WindowListener, Cypher Key, Encryption, Decryption, I/O, File exp.</p>
+  </div>
+
 
 <h2>Work Experience</h2>
   <section class="timeline">
