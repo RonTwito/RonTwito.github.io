@@ -53,7 +53,7 @@
 .contact-section textarea,
 .contact-section button {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 10px;      /* keep default bottom margin for inputs and textarea */
   padding: 6px 10px;
   font-size: 0.9rem;
   background-color: black;
@@ -62,14 +62,22 @@
   border-radius: 4px;
 }
 
+/* Remove bottom margin from textarea */
+.contact-section textarea {
+  margin-bottom: 0;
+}
+
+/* Remove top margin from button */
 .contact-section button {
   cursor: pointer;
+  margin-top: 0;
   transition: background-color 0.3s;
 }
 
 .contact-section button:hover {
   background-color: #003300;
 }
+
 
 
     /* קישורים ירוקים עם הדגשה ב-hover */
