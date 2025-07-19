@@ -43,18 +43,34 @@
   margin-top: 40px;
   text-shadow: 0 0 3px #00ff00;
 }
-.contact-form {
-  font-size: 0.9rem;
+.contact-section {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
+  font-size: 0.9rem;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  font-size: 0.9rem;
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+  width: 100%;
+  margin-bottom: 10px;
   padding: 6px 10px;
+  font-size: 0.9rem;
+  background-color: black;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  border-radius: 4px;
 }
+
+.contact-section button {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #003300;
+}
+
 
     /* קישורים ירוקים עם הדגשה ב-hover */
     .links {
@@ -131,20 +147,21 @@
 </div>
 
 
+  <div class="contact-section">
   <h2 class="contact-title">Contact Me</h2>
-  <div class="contact-form">
-  <form action="https://formspree.io/f/maylzkje" method="POST">
-    <label>
-      Your email:
-      <input type="email" name="email" required>
-    </label>
-    <label>
-      Your message:
-      <textarea name="message" required></textarea>
-    </label>
+  <form action="https://formspree.io/f/mwpqvkpy" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <input type="hidden" name="_format" value="plain">
+    <input type="hidden" name="_subject" value="New contact from portfolio site">
+    
     <button type="submit">Send</button>
   </form>
 </div>
+
 
 </body>
 </html>
