@@ -19,7 +19,20 @@
     }
 
     /* כותרות בהיר יותר ועם אפקט קל */
-    h1, h2 {
+    h1 {
+  color: #00ff00;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+  border: 2px solid #00ff00;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff00 inset, 0 0 30px #00ff00;
+  background-color: rgba(0, 255, 0, 0.05);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+    h2 {
       color: #00ff00;
       text-shadow: 0 0 5px #00ff00;
       margin: 10px 0;
